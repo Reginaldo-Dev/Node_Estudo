@@ -2,15 +2,16 @@
   "name": "nodejs_estudos",
   "version": "1.0.0",
   "description": "",
-  "main": "teste.js",
+  "main": "server.js",
   "scripts": {
-    "start": "ts-node ./src/teste.ts"
+    "start": "node --env-file=.env --import=tsx --watch ./src/server.ts"
   },
   "author": "Reginaldo",
   "license": "ISC",
   "descripton": "",
   "devDependencies": {
-    "ts-node": "^10.9.2",
+    "@types/node": "^22.1.0",
+    "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   }
 }
