@@ -4,12 +4,13 @@
   "description": "",
   "main": "teste.js",
   "scripts": {
-    "start": "ts-node ./teste.js"
+    "start": "ts-node ./src/teste.ts"
   },
   "author": "Reginaldo",
   "license": "ISC",
   "descripton": "",
   "devDependencies": {
-    "typesscript": "5.4.5" 
-   }
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
 }
