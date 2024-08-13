@@ -9,7 +9,7 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 server.use(express.urlencoded( { extended:true}));
-server.use(express.static(path.join(__dirname. '/public')));
+//server.use(express.static(path.join(__dirname. '../public')));
 
 server.get('/', (req, res) => {
     let name = "Reginaldo Francisco";
@@ -17,7 +17,7 @@ server.get('/', (req, res) => {
     res.send(`Meu nome é ${name} e tenho ${age} de idade`)
 });
 
-server.listen(3000, () => {
-    console.log('Servidor estar rodando na porta 3000');
+server.listen(3001, () => {
+    console.log('Servidor estar rodando na porta 3001');
 })
 
