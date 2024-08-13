@@ -1,10 +1,12 @@
 // Criando um servidor
+import { createServer } from 'node:http';
 import express from 'express';
 import helmet from 'helmet';
-import path from 'path';
+//import path from 'path';
 
 
 const server = express();
+const port = 1080;
 
 server.use(helmet());
 server.use(express.json());
@@ -17,7 +19,8 @@ server.get('/', (req, res) => {
     res.send(`Meu nome é ${name} e tenho ${age} de idade`)
 });
 
-server.listen(3001, () => {
-    console.log('Servidor estar rodando na porta 3001');
+//escutando a porta
+server.listen(1080, () => {
+    console.log(`Servidor estar rodando na porta ${port}`);
 })
 
